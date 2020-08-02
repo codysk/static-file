@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title> image </title>
+</head>
+<body>
+<script>
+let imgTag = document.createElement("img")
+let base64image = location.hash.substring(1)
+imgTag.src = "data:image/jpeg;base64," + base64image
+document.appendChild(imgTag)
+</script>
+</body>
+</html>
